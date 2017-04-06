@@ -3,44 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <link href="./css/app.css" rel ="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 </head>
 <body>
   <header>
-    <div class="icon">
-      <img src="./img/menu_icon.png">
-    </div>
+    <span onclick="openNav()">
+      <div class="icon">
+        <i class="material-icons header-icons">menu</i>
+      </div>
+       </span>
+       <div id="mySidenav" class="sidenav">
+         <div>
+           <div class="closebtn" onclick="closeNav()"><i class="material-icons header-icons ">close</i></div>
+        </div>
+         <a href="#">Favorites</a>
+         <a href="#">Bookmarks</a>
+         <a href="#">Map</a>
+         <a href="#">Settings</a>
+         </div>
     <div class="title"></div>
     <div class="icon search">
-      <img src="./img/search_icon.png">
+      <i class="material-icons header-icons">search</i>
     </div>
   </header>
-  <nav>
-    
-  </nav>
+
   <div>
-  <article>
-    <div class="card">
-      <div class="image">
-        <!-- <img src="./img/Cabin.jpg"> -->
-      </div>
+  <article class="card">
+      <img src="./img/cabin-mobile.jpg">
       <div class="title">
-        <div class="card_title">
-          <h5>The Cabin</h5>
+        <div>
+          <h5 class="card_title">The Cabin</h5>
         </div>
         <div>
           <img class="card_icon" src="./img/bookmark_border_icon.png">
           <img class="card_icon" src="./img/favorite_icon.png">
         </div>
       </div>
-    </div>
   </article>
-  <article>
-    <div>
-    </div>
-    <div>
-    </div>
+  <article class="card">
+      <img src="./img/lighthouse-mobile.jpg">
+      <div class="title">
+        <div>
+          <h5 class="card_title">Lighthouse</h5>
+        </div>
+        <div>
+          <img class="card_icon" src="./img/bookmark_border_icon.png">
+          <img class="card_icon" src="./img/favorite_icon.png">
+        </div>
+      </div>
   </article>
 </div>
 <button></button>
@@ -48,5 +61,5 @@
   <footer>
   </footer>
 </body>
-	<script src="js/playsam.js"></script>
+	<script src="js/java.js"></script>
 </html>

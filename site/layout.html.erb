@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <link href="./css/app.css" rel ="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 </head>
 <body>
   <header>
-    <div class="icon">
-      <img src="./img/menu_icon.png">
-    </div>
+    <span onclick="openNav()">
+      <div class="icon">
+        <i class="material-icons header-icons">menu</i>
+      </div>
+       </span>
+       <div id="mySidenav" class="sidenav">
+         <div>
+           <div class="closebtn" onclick="closeNav()"><i class="material-icons header-icons ">close</i></div>
+        </div>
+         <a href="#">Favorites</a>
+         <a href="#">Bookmarks</a>
+         <a href="#">Map</a>
+         <a href="#">Settings</a>
+         </div>
     <div class="title"></div>
     <div class="icon search">
-      <img src="./img/search_icon.png">
+      <i class="material-icons header-icons">search</i>
     </div>
   </header>
-  <nav>
-    
-  </nav>
+
   <%=yield%>
   <footer>
   </footer>
 </body>
-	<script src="js/playsam.js"></script>
+	<script src="js/java.js"></script>
 </html>
