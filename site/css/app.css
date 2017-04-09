@@ -115,10 +115,10 @@ button{
         margin-left: 50px;
 }
 
-@media screen and (max-height: 667px) {
+/*@media screen and (max-height: 667px) {*/
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 18px;}
-    }
+    /*}*/
 
 .material-icons.card_icon {
       margin: 5px;
